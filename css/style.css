@@ -1,0 +1,184 @@
+body {
+  background-color: #d6d6d6;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 10px;
+  min-height: calc(100vh - 20px);
+  overflow-x: hidden;
+  width: calc(100vw - 20px);
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#65b5ff), to(#1b67f5));
+  background-image: linear-gradient(to bottom right, #65b5ff, #1b67f5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  padding: 30px 0 20px;
+  -webkit-box-shadow: 0 10px 0 0 #0260ad;
+          box-shadow: 0 10px 0 0 #0260ad;
+  font-family: alata;
+  font-weight: normal;
+  color: white;
+}
+
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form div .search {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+form div button {
+  padding: 10px 30px;
+  background-color: #f1c226;
+  border: 5px solid #df9902;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 10px;
+  -webkit-box-shadow: 0 5px 0 0 #c08402;
+          box-shadow: 0 5px 0 0 #c08402;
+  cursor: pointer;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+form div button:hover {
+  background-color: #facd50;
+}
+
+div.list {
+  max-width: 1000px;
+  background-color: #fff;
+  min-width: 300px;
+  margin: 30px auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 0 0 #acacac;
+          box-shadow: 0 10px 0 0 #acacac;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.list p {
+  text-align: center;
+  color: gray;
+  margin: 24px 0 0;
+}
+
+div.list ul {
+  list-style: none;
+  padding: 0px 30px;
+  width: 100%;
+}
+
+div.list ul li {
+  background-color: #e4e4e4;
+  padding: 0px 15px;
+  border-radius: 10px;
+  margin: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 970px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.list ul li.active {
+  text-decoration: line-through;
+  color: #9c9c9c;
+}
+
+div.list ul li div {
+  max-width: 900px;
+  overflow: hidden;
+}
+
+div.list ul li div.buttons button.times {
+  background-color: #ff3e3e;
+  border: 5px solid #c52424;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 5px 10px 6px;
+  -webkit-box-shadow: 0 5px 0 0 #b11c1c;
+          box-shadow: 0 5px 0 0 #b11c1c;
+  cursor: pointer;
+  color: white;
+}
+
+div.list ul li div.buttons button.times:hover {
+  background-color: #ff6f6f;
+}
+
+div.list ul li div.buttons button.check {
+  background-color: #eeb242;
+  border: 5px solid #e48a03;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 5px 10px 10px;
+  -webkit-box-shadow: 0 5px 0 0 #c57804;
+          box-shadow: 0 5px 0 0 #c57804;
+  cursor: pointer;
+  color: white;
+}
+
+div.list ul li div.buttons button.check:hover {
+  background-color: #ffc46b;
+}
+
+h1 {
+  font-family: Alata;
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+input {
+  max-width: 300px;
+  font-size: 22px;
+  padding: 5px;
+}
+
+.add {
+  width: 90%;
+  max-width: 400px;
+}
+
+i {
+  pointer-events: none;
+}
+/*# sourceMappingURL=style.css.map */

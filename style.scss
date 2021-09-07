@@ -1,0 +1,156 @@
+body {
+   background-color: rgb(214, 214, 214);
+   font-size: 20px;
+   font-family: sans-serif;
+   font-weight: bold;
+   margin: 10px;
+   min-height: calc(100vh - 20px);
+   overflow-x: hidden;
+   width: calc(100vw - 20px);
+}
+
+form {
+   max-width: 1000px;
+   margin: 0 auto;
+   background-image: linear-gradient(to bottom right, rgb(101, 181, 255), rgb(27, 103, 245));
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 20px;
+   padding: 30px 0 20px;
+   box-shadow: 0 10px 0 0 rgb(2, 96, 173);
+   font-family: alata;
+   font-weight: normal;
+   color: white;
+   
+   div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .search {
+         max-width: 300px;
+         width: 100%;
+         margin-right: 10px;
+      }
+      button {
+      padding: 10px 30px;
+      background-color: rgb(241, 194, 38);
+      border: 5px solid rgb(223, 153, 2);
+      border-radius: 10px;
+      font-size: 25px;
+      margin: 10px;
+      box-shadow: 0 5px 0 0 rgb(192, 132, 2);
+      cursor: pointer;
+      font-family: Roboto;
+      font-weight: bold;
+
+      &:hover {
+         background-color: rgb(250, 205, 80);
+      }
+   }
+   }
+
+   
+}
+
+
+div.list {
+   max-width: 1000px;
+   background-color: #fff;
+   min-width: 300px;
+   margin: 30px auto;
+   border-radius: 20px;
+   box-shadow: 0 10px 0 0 rgb(172, 172, 172);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   p {
+      text-align: center;
+      color: gray;
+      margin: 24px 0 0;
+   }
+
+   ul {
+      list-style: none;
+      padding: 0px 30px;
+      width: 100%;
+
+      li {
+         background-color: rgb(228, 228, 228);
+         padding: 0px 15px;
+         border-radius: 10px;
+         margin: 5px 10px;
+         display: flex;
+         max-width: 970px;
+         justify-content: space-between;
+         align-items: center;
+
+         &.active {
+            text-decoration: line-through;
+            color: rgb(156, 156, 156);
+         }
+
+         div {
+            max-width: 900px;
+            overflow: hidden;
+         }
+
+         div.buttons {
+            button.times {
+               background-color: rgb(255, 62, 62);
+               border: 5px solid rgb(197, 36, 36);
+               border-radius: 10px;
+               font-size: 20px;
+               margin: 5px 10px 6px;
+               box-shadow: 0 5px 0 0 rgb(177, 28, 28);
+               cursor: pointer;
+               color: white;
+
+               &:hover {
+                  background-color: rgb(255, 111, 111);
+               }
+            }
+
+            button.check {
+               background-color: rgb(238, 178, 66);
+               border: 5px solid rgb(228, 138, 3);
+               border-radius: 10px;
+               font-size: 20px;
+               margin: 5px 10px 10px;
+               box-shadow: 0 5px 0 0 rgb(197, 120, 4);
+               cursor: pointer;
+               color: white;
+
+               &:hover {
+                  background-color: rgb(255, 196, 107);
+               }
+            }
+         }
+
+      }
+   }
+}
+
+h1 {
+   font-family: Alata;
+   font-size: 50px;
+   text-align: center;
+   margin: 10px;
+}
+
+input {
+   max-width: 300px;
+   font-size: 22px;
+   padding: 5px;
+}
+
+.add {
+   width: 90%;
+   max-width: 400px;
+}
+
+
+i {
+   pointer-events: none; // not clickable
+}
