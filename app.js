@@ -1,3 +1,5 @@
+// This is a to do aplication that works on client side and is not connected to any kind of server to store data.
+// defining HTML elements to work with as variables
 const form = document.querySelector('form')
 const ul = document.querySelector('ul')
 const listItems = document.getElementsByClassName('task')
@@ -6,7 +8,7 @@ const searchInput = document.querySelector('input.search')
 const p = document.querySelector('p')
 let count = 0
 
-
+// function that add task with certain text to list
 const addTask = (e) => {
    e.preventDefault()
    const taskTitle = taskInput.value
@@ -29,6 +31,7 @@ const removeTask = (e) => {
    check()
 }
 
+// task search engine
 const searchTask = (e) => {
    let tasks = [...listItems];
    searchText = searchInput.value.toLowerCase();
@@ -40,11 +43,12 @@ const searchTask = (e) => {
    }
 }
 
+// funtion that define what is displayed depending on number of total tasks
 const check = () => {
    if (listItems.length > 0) {
       p.textContent = `Number of tasks: ${count}`
       p.style.color = 'black'
-   } else {
+   } else { // if there are no tasks
       p.textContent = 'nothing here...'
       p.style.color = 'gray'
    }
