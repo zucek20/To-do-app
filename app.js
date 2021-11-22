@@ -15,7 +15,15 @@ const addTask = (e) => {
    if (taskTitle !== '') {
       const task = document.createElement('li')
       task.className = 'task'
-      task.innerHTML = `<div>${taskTitle}</div>` + '<div class="buttons"><button class="check" title="Check"><i class="fas fa-check"></i></button><button class="times" title="Remove task"><i class="fas fa-times"></i></button></div>'
+      task.innerHTML = `<div>${taskTitle}</div>` + 
+      `<div class="buttons">
+         <button class="check" title="Check">
+            <i class="fas fa-check"></i>
+         </button>
+         <button class="times" title="Remove task">
+            <i class="fas fa-times"></i>
+         </button>
+      </div>`
       ul.appendChild(task)
       taskInput.value = ''
       task.querySelector('button.times').addEventListener('click', removeTask)
