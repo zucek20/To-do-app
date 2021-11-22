@@ -8,19 +8,29 @@ const searchInput = document.querySelector('input.search')
 const p = document.querySelector('p')
 let count = 0
 
-// function that add task with certain text to list
+// function that add task with certain text and proper buttons to list
 const addTask = (e) => {
    e.preventDefault()
    const taskTitle = taskInput.value
    if (taskTitle !== '') {
       const task = document.createElement('li')
       task.className = 'task'
-      task.innerHTML = `<div>${taskTitle}</div>` + '<div class="buttons"><button class="check" title="Check"><i class="fas fa-check"></i></button><button class="times" title="Remove task"><i class="fas fa-times"></i></button></div>'
+      task.innerHTML = 
+      `<div>${taskTitle}
+         <div class="buttons">
+            <button class="check" title="Check">
+               <i class="fas fa-check"></i>
+            </button>
+            <button class="times" title="Remove task">
+               <i class="fas fa-times"></i>
+            </button>
+         </div>
+      </div>`
       ul.appendChild(task)
       taskInput.value = ''
       task.querySelector('button.times').addEventListener('click', removeTask)
       task.querySelector('button.check').addEventListener('click', checkBox)
-      ++count
+         ++count
       check()
    }
 }
