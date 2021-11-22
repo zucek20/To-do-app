@@ -8,7 +8,7 @@ const searchInput = document.querySelector('input.search')
 const p = document.querySelector('p')
 let count = 0
 
-// function that add task with certain text to list
+// function that add task with certain text and proper buttons to list
 const addTask = (e) => {
    e.preventDefault()
    const taskTitle = taskInput.value
